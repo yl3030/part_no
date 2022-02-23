@@ -182,13 +182,19 @@ main {
   margin-right: 5px;
 }
 
-.filter input {
-  border: 1px solid #006c92;
-  color: #006c92;
+.filter .submit {
   background-color: #fff;
-  padding: 5px 10px;
-  cursor: pointer;
   border-radius: 5px !important;
+  border: 1px solid #006c92;
+  height: 35px;
+  overflow: hidden;
+}
+
+.filter .submit input {
+  color: #006c92;
+  padding: 0 10px;
+  cursor: pointer;
+  border: 0;
 }
 
 .pagination {
@@ -369,8 +375,11 @@ main {
   .filter select {
     width: 100px;
   }
-  .filter input {
+  .filter .submit {
     width: 47px;
+  }
+  .filter .submit input {
+    width: 100%;
   }
   .pagination > span {
     font-size: 14px;

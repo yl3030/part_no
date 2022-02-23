@@ -152,13 +152,18 @@ main {
         padding: 5px 10px;
         margin-right: 5px;
     }
-    input {
-        border: 1px solid #006c92;
-        color: #006c92;
+    .submit {
         background-color: #fff;
-        padding: 5px 10px;
-        cursor: pointer;
         border-radius: 5px !important;
+        border: 1px solid #006c92;
+        height: 35px;
+        overflow: hidden;
+        input {
+            color: #006c92;
+            padding: 0 10px;
+            cursor: pointer;
+            border: 0;
+        }
     }
 }
 
@@ -325,8 +330,11 @@ main {
         select {
             width: 100px;
         }
-        input {
+        .submit {
             width: 47px;
+            input {
+                width: 100%;
+            }
         }
     }
     .pagination {
