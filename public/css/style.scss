@@ -28,6 +28,7 @@ input,select {
     height: 35px;
     border-radius: $common-radius;
     border: 1px solid #979797;
+    background-color: #fff;
 }
 
 input {
@@ -321,6 +322,9 @@ main {
         select {
             width: 100px;
         }
+        input {
+            width: 47px;
+        }
     }
     .pagination {
         >span {
@@ -344,8 +348,14 @@ main {
         &_text {
             width: calc(100% - 105px);
         }
+        &_submit {
+            width: 97px;
+        }
     }
     .table {
+        .checkbox {
+            margin: 0 auto;
+        }
         td {
             font-size: 14px;
             padding: 5px;

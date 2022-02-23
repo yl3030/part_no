@@ -29,6 +29,7 @@ input, select {
   height: 35px;
   border-radius: 5px;
   border: 1px solid #979797;
+  background-color: #fff;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
@@ -366,6 +367,9 @@ main {
   .filter select {
     width: 100px;
   }
+  .filter input {
+    width: 47px;
+  }
   .pagination > span {
     font-size: 14px;
   }
@@ -386,6 +390,12 @@ main {
   }
   .search_text {
     width: calc(100% - 105px);
+  }
+  .search_submit {
+    width: 97px;
+  }
+  .table .checkbox {
+    margin: 0 auto;
   }
   .table td {
     font-size: 14px;
