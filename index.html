@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神盾系統</title>
+
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <header class="d-flex d-flex-common">
+        <a class="logo" href=""><img src="./public/img/btn_logo.png" alt=""></a>
+        <div class="d-flex align-items-center">
+            <span>你好，Fanny</span>
+            <button>登出</button>
+        </div>
+    </header>
+    <main>
+        <div class="tab d-flex align-items-center justify-content-between">
+            <a class="active" href="">全部料號</a>
+            <a href="">常用料號</a>
+            <a href="">搜尋紀錄</a>
+        </div>
+        <form class="search d-flex">
+            <input type="text" class="search_text" placeholder="請輸入搜尋料號">
+            <input type="submit" value="搜尋" class="search_submit">
+        </form>
+        <div class="d-flex d-flex-common">
+            <form class="filter d-flex align-items-center">
+                <select name="" id="">
+                    <option value="">批次操作</option>
+                </select>
+                <input type="submit" value="套用">
+            </form>
+            <div class="pagination d-flex align-items-center">
+                <span>3個項目</span>
+                <a href="" class="arrow prev"><img src="./public/img/btn_chevron_left.png" alt=""></a>
+                <div class="page d-flex align-items-center">
+                    <input type="number" value="1">
+                    <span>/13</span>
+                </div>
+                <a href="" class="arrow next"><img src="./public/img/btn_chevron_left.png" alt=""></a>
+            </div>
+        </div>
+        <table class="table" cellpadding="0">
+            <tr class="table_title">
+                <td class="check">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <img src="./public/img/btn_tick.png" alt="">
+                    </div>
+                </td>
+                <td class="name">料號</td>
+                <td class="num">可供數量</td>
+                <td class="event">操作</td>
+            </tr>
+            <tr class="table_title">
+                <td class="check">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <img src="./public/img/btn_tick.png" alt="">
+                    </div>
+                </td>
+                <td class="name">B-G474E-DPOW1</td>
+                <td class="num">20</td>
+                <td class="event">
+                    <button>發送詢價郵件</button>
+                    <button>設定為常用料</button>
+                </td>
+            </tr>
+            <tr class="table_title">
+                <td class="check">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <img src="./public/img/btn_tick.png" alt="">
+                    </div>
+                </td>
+                <td class="name">I-NUCLEO-LRWAN1</td>
+                <td class="num">20</td>
+                <td class="event">
+                    <button>發送詢價郵件</button>
+                    <button>設定為常用料</button>
+                </td>
+            </tr>
+            <tr class="table_title">
+                <td class="check">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <img src="./public/img/btn_tick.png" alt="">
+                    </div>
+                </td>
+                <td class="name">NUCLEO-F401RE-M01</td>
+                <td class="num">20</td>
+                <td class="event">
+                    <button>發送詢價郵件</button>
+                    <button>設定為常用料</button>
+                </td>
+            </tr>
+            <tr class="table_title">
+                <td class="check">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <img src="./public/img/btn_tick.png" alt="">
+                    </div>
+                </td>
+                <td class="name">料號</td>
+                <td class="num">可供數量</td>
+                <td class="event">操作</td>
+            </tr>
+        </table>
+        <div class="d-flex d-flex-common">
+            <div class="d-flex align-items-center page-num">
+                <span>每頁筆數</span>
+                <select name="" id="">
+                    <option value="">10</option>
+                </select>
+            </div>
+            <div class="pagination d-flex align-items-center">
+                <span>3個項目</span>
+                <a href="" class="arrow prev"><img src="./public/img/btn_chevron_left.png" alt=""></a>
+                <div class="page d-flex align-items-center">
+                    <input type="number" value="1">
+                    <span>/13</span>
+                </div>
+                <a href="" class="arrow next"><img src="./public/img/btn_chevron_left.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/common.js"></script>
+</body>
+</html>
