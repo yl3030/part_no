@@ -142,6 +142,12 @@ main {
         border: 0;
         overflow: hidden;
         background-color: #4bb6d0;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 14px;
         input {
             border: 0;
             // padding: 5px 35px;
@@ -150,6 +156,8 @@ main {
             color: #fff;
             display: block;
             background-color: transparent;
+            position: absolute;
+            opacity: 0;
         }
     }
 }
@@ -374,7 +382,7 @@ main {
             width: calc(100% - 105px);
         }
         &_submit {
-            width: 97px;
+            // width: 97px;
         }
     }
     .table {
