@@ -30,6 +30,7 @@ input,select {
     border: 1px solid #979797;
     background-color: #fff;
     color: #000;
+    font-family: 'PingFangTC', 微軟正黑體;
 }
 
 input {
@@ -126,7 +127,6 @@ main {
 }
 
 .search {
-    // margin-bottom: 10px;
     &_text {
         margin-right: 5px;
         padding: 10px 15px;
@@ -137,7 +137,6 @@ main {
     &_submit {
         height: 35px;
         width: 97px;
-        // border-radius: $common-radius;
         border-radius: 5px !important;
         border: 0;
         overflow: hidden;
@@ -150,7 +149,6 @@ main {
         font-size: 14px;
         input {
             border: 0;
-            // padding: 5px 35px;
             width: 100%;
             height: 100%;
             color: #fff;
@@ -178,7 +176,6 @@ main {
         overflow: hidden;
         input {
             color: #006c92;
-            // padding: 0 10px;
             width: 100%;
             height: 100%;
             background-color: transparent;
@@ -278,13 +275,24 @@ main {
             width: 35px;
         }
         &.name {
-            width: calc(35% - 35px);
+            width: calc(100% - 35px - 140px - 130px - 180px);
+        }
+        &.hope {
+            width: 140px;
+            padding-right: 50px;
+            input {
+                width: 100%;
+                padding: 5px 10px;
+                font-size: 15px;
+                text-align: center;
+
+            }
         }
         &.num {
-            width: 30%;
+            width: 130px;
         }
         &.event {
-            width: 35%;
+            width: 180px;
             button {
                 color: #006c92;
                 padding: 5px 15px;
@@ -312,17 +320,18 @@ main {
         td {
             font-size: 14px;
             padding: 5px;
-            &.check {
-                width: 35px;
-            }
             &.name {
-                width: calc(80% - 35px - 140px);
+                width: calc(100% - 35px - 90px - 90px - 165px);
+            }
+            &.hope {
+                width: 90px;
+                padding-right: 20px;
             }
             &.num {
-                width: 20%;
+                width: 90px;
             }
             &.event {
-                width: 140px;
+                width: 165px;
                 button {
                     margin: 4px 0;
                 }
@@ -354,9 +363,6 @@ main {
         }
         .submit {
             width: 47px;
-            // input {
-            //     width: 100%;
-            // }
         }
     }
     .pagination {
@@ -381,9 +387,6 @@ main {
         &_text {
             width: calc(100% - 105px);
         }
-        &_submit {
-            // width: 97px;
-        }
     }
     .table {
         .checkbox {
@@ -392,21 +395,27 @@ main {
         td {
             font-size: 14px;
             padding: 5px;
-            &.check {
-                width: 35px;
+            &.hope {
+                width: 100px;
+                padding-right: 5px;
+                input {
+                    padding: 5px;
+                }
             }
             &.name {
-                width: calc(78% - 35px - 115px);
+                width: calc(100% - 35px - 100px - 100px - 95px);
+                font-size: 13px;
             }
             &.num {
-                width: 22%;
+                width: 100px;
             }
             &.event {
-                width: 115px;
+                width: 95px;
                 button {
                     margin: 4px 0;
                     font-size: 12px;
-                    padding: 5px 8px;
+                    padding: 5px;
+                    display: block;
                 }
             }
         }
